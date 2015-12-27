@@ -1,0 +1,33 @@
+"Phrases"
+{
+	"Rank_Menu"
+	{
+		"en"		"Choose your rank:"
+		"zho"		"選擇你的牌位:"
+	}
+	"Rank_Set"
+	{
+		"en"		"[SM]Your rank is "
+		"zho"		"[SM]你的牌位現在是 "
+	}
+	"ProfileRank_Menu"
+	{
+		"en"		"Choose your profile level "
+		"zho"		"選擇你的個人檔案等級:"
+	}
+	"ProfileRank_Set"
+	{
+		"en"		"[SM]Your profile level is "
+		"zho"		"[SM]你的個人檔案等級現在是 "
+	}
+	"Coin_Menu"
+	{
+		"en"		"Choose your coin "
+		"zho"		"選擇你的徽章:"
+	}
+	"Coin_Set"
+	{
+		"en"		"[SM]Your coin is "
+		"zho"		"[SM]你的徽章現在是 "
+	}
+}
