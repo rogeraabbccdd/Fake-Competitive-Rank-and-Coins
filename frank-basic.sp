@@ -401,9 +401,9 @@ public Action Command_CoinMenu(int client, int args)
 		Menu coin = CreateMenu(CoinHandler);
 		coin.SetTitle("%T", "Coin_Menu", client);
 		int size = GetArraySize(g_arrayCoins);
-		int key[64];
-		char ckey[64];
-		char value[64];
+		int key[999];
+		char ckey[999];
+		char value[999];
 		for (int i = 0; i < size; i++)
 		{
 			key[i] = GetArrayCell(g_arrayCoinsNum, i);
@@ -423,7 +423,7 @@ public int CoinHandler(Menu coin, MenuAction action, int client, int itemNum)
 	case MenuAction_Select:
 		{
 			char info[6];
-			char coinName[64];
+			char coinName[999];
 			int index;
 			coin.GetItem(itemNum, info, sizeof(info));
 			g_iCoin[client] = StringToInt(info);
