@@ -49,7 +49,7 @@ public void OnPluginStart()
 	LoadTranslations("common.phrases");
 	LoadTranslations("frank.phrases");
 	
-	g_hCvarVersion = CreateConVar("sm_frank_version", PLUGIN_VERSION, "Fake rank version", FCVAR_PLUGIN|FCVAR_SPONLY|FCVAR_REPLICATED|FCVAR_NOTIFY|FCVAR_DONTRECORD);
+	g_hCvarVersion = CreateConVar("sm_frank_version", PLUGIN_VERSION, "Fake rank version", FCVAR_SPONLY|FCVAR_REPLICATED|FCVAR_NOTIFY|FCVAR_DONTRECORD);
 	g_hCvarVersion.SetString(PLUGIN_VERSION);
 	g_ShowCoins = CreateConVar("sm_frank_coins", "1", "Show legit coins on players, if enabled", _, true, 0.0, true, 1.0);
 	g_ShowProfileRanks = CreateConVar("sm_frank_profileranks", "1", "Show legit profile ranks on players, if enabled", _, true, 0.0, true, 1.0);
@@ -179,7 +179,7 @@ void BrowseKeyValues(Handle k)
 	} while (KvGotoNextKey(k, false));
 }
 
-public int OnClientCookiesCached(int client)
+public void OnClientCookiesCached(int client)
 {
 	char valueRank[16];
 	char valueProfileRank[16];
